@@ -18,7 +18,7 @@ http://3.35.175.76/home
 
 
 
-## 구현한 기능
+## 1. 구현한 기능
 
 로그인 & 회원가입
 
@@ -30,7 +30,7 @@ http://3.35.175.76/home
 
 
 
-## API
+## 2. API
 <details> <summary> </summary> <div markdown="1">     
 
 
@@ -63,7 +63,7 @@ http://3.35.175.76/home
 </details>
 
 
-## 코드 리뷰
+## 3. 코드 리뷰
 
 <details>
 <summary>로그인 & 회원가입&유저인증
@@ -421,7 +421,7 @@ users
 </details>
 
 
-## 느낀 점
+## 4. 느낀 점
 <details>
 <summary></summary>
   DB를 설계할 때 처음부터 잘 설계해야겠다고 느꼈다. <br />
