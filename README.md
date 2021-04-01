@@ -312,7 +312,6 @@ io.on("connection", (sock) => {
 ```
 
 1. 클라이언트에서 postOrder 함수가 발동되면, 'SAVE'란 이름으로 socket을 emit한다.
-
 2. 서버는 SAVE에서 nickname, goodsId, goodsname의 변수를 받는다.
 3. 받은 변수에서, date에 moment를 이용한 시간 표현만 추가하여 "SAVE_REVIEW"로 내보낸다.
 4. 클라이언트에서 "SAVE_REVIEW"를 받고, 받아온 변수를 makeBuyNotification 함수에 인자로 넣고 발동시킨다.
@@ -397,9 +396,7 @@ router.post("/save", upload.single('file'), async (req, res, next) => {
 ![image](https://user-images.githubusercontent.com/78591345/113245860-c896d080-92f2-11eb-9ecf-2b78917b5ce1.PNG)
 
 blogs
-
 - goodsId : 고유값을 이용할 때 사용했다. comment의 commenId와 일치한다.
-
 - name : 게시글 제목
 - content : 게시글 내용
 - nickname : 작성자 닉네임
@@ -408,21 +405,30 @@ blogs
 - day : 게시글 작성한 날짜
 
 
-
 comment
-
 - comment : 댓글 내용
 - nickname : 작성자 이름
 - comment_Delete_Id : 댓글 삭제등등 할 때 필요한 댓글 고유값
 - commentId : 댓글이 어느 게시글에 있는지 확인하는데 쓰임 (쿼리스트링값이랑 동일)
 
 
-
 users
-
 - email : 로그인 할 때 쓰이는 이메일
 - nickname : 글 작성, 댓글 등에 보이는 닉네임
 - password : 비밀번호
 
 </div>
 </details>
+
+
+## 느낀 점
+<details>
+<summary></summary>
+  DB를 설계할 때 처음부터 잘 설계해야겠다고 느꼈다.
+  JS도 잘 모르고, Node도 처음 접해봐서 어려운 점이 많았지만, 하나하나 조건을 클리어해가면서 즐거움을 느꼈다.
+  효율적인 코드인지, 정석적인 코드인지는 잘 모르겠으나, 기능을 구현했다는 것에 일차적으론 만족했다.
+  Node가 서버단과 클라이언트단에서 어떤식으로 api를 주고받고 운용되는지 조금은 이해했다.
+  좋아요나, 본인 댓글 버튼만 보이기 등을 구현하려 했으나, 시간도 부족하고, 만든 DB로 설정하기가 어려움을 느껴 작업을 중단하고 서버를 배포했다.
+  서버를 배포할 때 7시간이 넘게 걸렸다. 정말 똑같은 일만 계속 하니까 재미도 없고, 답답하고, 화도 나서 이거 하기 전까진 안자려고 했는데, 결국엔 쉼표가 문제였다.
+  공부한 것도 아니고 이렇게 단순한 문제로 시간만 날리니까 답답했다. 앞으로 세심한 부분을 더 신경써야겠다.
+<div markdown="1">
