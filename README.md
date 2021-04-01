@@ -156,7 +156,7 @@ url : api/users/me
 </details>
 
 
-
+<br />
 <details>
 <summary>게시글 수정 버튼 보이기 / 안 보이기</summary>
 <div markdown="1"> 
@@ -193,7 +193,7 @@ router.post("/comment_fix_button/:blogsId", async (req, res) => {
 </div>
 </details>
 
-
+<br />
 <details>
 <summary>댓글</summary>
 <div markdown="1">    
@@ -252,7 +252,7 @@ router.post("/comment_save/:blogsId", async (req, res, next) => {
 </div>
 </details>
 
-
+<br />
 <details>
 <summary>댓글 & 새글 실시간 알람</summary>
 <div markdown="1">   
@@ -320,7 +320,7 @@ io.on("connection", (sock) => {
 </div>
 </details>
 
-
+<br />
 <details>
 <summary>게시글 저장 & 파일 업로드</summary>
 <div markdown="1">       
@@ -386,7 +386,7 @@ router.post("/save", upload.single('file'), async (req, res, next) => {
 </div>
 </details>
 
-
+<br />
 <details>
 <summary>DB설계</summary>
 <div markdown="1">  
@@ -420,7 +420,7 @@ users
 </div>
 </details>
 
-
+<br />
 ## 4. 느낀 점
 <details>
 <summary></summary>
