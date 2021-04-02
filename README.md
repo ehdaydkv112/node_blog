@@ -1,5 +1,6 @@
 # Node-Blog
 개인 미니프로젝트
+(서버는 AWS EC2 와 FileZilla 이용, 배포는 PM2로 배포)
 
 배포 : AWS EC2와 FileZilla를 이용해 서버 구축, PM2를 이용해 배포
 
